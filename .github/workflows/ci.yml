@@ -21,4 +21,4 @@ jobs:
     - name: Build the Docker image
       run: docker build -t backtodo .
     - name: Push to Dockerhub
-      run: docker push Brazf/backtodo:latest
+      run: docker push brazf/backtodo:latest
