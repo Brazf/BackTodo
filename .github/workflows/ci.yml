@@ -20,5 +20,7 @@ jobs:
 
     - name: Build the Docker image
       run: docker build -t back-todo:latest .
+    - name: Tag the Docker image
+      run: docker tag back-todo:latest brazf/back-todo:latest
     - name: Push to Dockerhub
       run: docker push brazf/back-todo:latest
