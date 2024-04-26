@@ -6,6 +6,10 @@ const {
   UpdateTasks,
 } = require("../Services/taskService.js");
 
+async function ping(req, res) {
+  return res.json({pong: true})
+}
+
 async function insertTask(req, res) {
   let data = req.body;
   if (!data.title) {
@@ -56,4 +60,5 @@ module.exports = {
   showTask,
   updateTask,
   deleteTask,
+  ping
 };
