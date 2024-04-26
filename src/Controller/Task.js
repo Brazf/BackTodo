@@ -7,7 +7,7 @@ const {
 } = require("../Services/taskService.js");
 
 async function ping(req, res) {
-  return res.json({pong: true})
+  return res.json({pong: false})
 }
 
 async function insertTask(req, res) {
