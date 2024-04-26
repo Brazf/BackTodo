@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 app.use(router);
 
-const port = 3000;
+const port = 3001;
 
 const startServer = () => {
   return app.listen(port, () => {
