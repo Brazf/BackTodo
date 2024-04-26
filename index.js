@@ -8,6 +8,10 @@ app.use(router);
 
 const port = 3003;
 
+app.get('/', (req, res) => {
+  res.send('Servidor está ativo e funcionando!');
+});
+
 const startServer = () => {
   return app.listen(port, () => {
     console.log(`Server Running on port ${port}`);
