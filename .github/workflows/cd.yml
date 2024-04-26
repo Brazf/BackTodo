@@ -18,4 +18,4 @@ jobs:
     - name: Delete Old docker container
       run: sudo docker rm -f back-todo-container || true
     - name: Run Docker Container
-      run: sudo docker run -it -p 3000:3003 -e DATABASE_URL="mysql://root:todo92258823823@34.122.31.82:3306/todo" back-todo
+      run: sudo docker run -it -p 3003:3000 -e DATABASE_URL="mysql://root:todo92258823823@34.122.31.82:3306/todo" brazf/back-todo:latest
