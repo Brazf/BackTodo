@@ -9,7 +9,7 @@ app.use(router);
 const port = 3003;
 
 app.get('/', (req, res) => {
-  res.send('Servidor está ativo!');
+  res.send('Servidor está ativo! ');
 });
 
 const startServer = () => {
