@@ -13,6 +13,8 @@ COPY prisma ./prisma
 # Gera o cliente Prisma
 RUN npx prisma generate
 
+ENV DATABASE_URL="mysql://root:todo92258823823@34.122.31.82:3306/todo"
+
 COPY . .
 
 EXPOSE 3003
